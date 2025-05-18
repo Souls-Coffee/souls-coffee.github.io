@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souls Coffee – Spiritual & Mental Well-being</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #000000;
+      overflow-x: hidden;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 10;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .navbar nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #4400ff, #7d5bda);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 2rem;
+      color: white;
+      position: relative;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      opacity: 0.9;
+    }
+    .cta {
+      margin-top: 2rem;
+    }
+    .cta button {
+      background: #00ffc8;
+      color: #000;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta button:hover {
+      background: #00e6b4;
+    }
+    .mockup {
+      background: #f0f0f0;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .mockup img {
+      width: 300px;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section p {
+      font-size: 1.125rem;
+      color: #575757;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+    .feature {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+      width: 280px;
+    }
+    .feature h3 {
+      color: #4400ff;
+      margin-bottom: 0.5rem;
+    }
+    .feature p {
+      color: #474747;
+    }
+    .testimonial {
+      background: #fafafa;
+      margin: 4rem 2rem;
+      padding: 2rem;
+      border-left: 5px solid #4400ff;
+      font-style: italic;
+      color: #333;
+    }
+    .platforms {
+      padding: 2rem;
+      text-align: center;
+    }
+    .platforms img {
+      height: 60px;
+      margin: 1rem auto;
+    }
+    .about {
+      background: #e9eeff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: #333;
+    }
+    .community {
+      background: #f9f9f9;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .community h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .community p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: #333;
+    }
+    footer {
+      background: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Souls Coffee</div>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+        <a href="#login">Login</a>
+      </nav>
+    </div>
+    <h1>Souls Coffee</h1>
+    <p>Elevate your personal life, relationships, and career by aligning your inner peace with purposeful action. Where mental clarity meets spiritual strength.</p>
+    <div class="cta">
+      <button>Join the Early Access</button>
+    </div>
+  </header>
+
+  <div class="mockup fade-in">
+    <img src="https://via.placeholder.com/300x600.png?text=App+Mockup" alt="App Mockup">
+  </div>
+
+  <section class="fade-in">
+    <h2>What You'll Find</h2>
+    <p>Souls Coffee combines calming guided meditations and reflective affirmations to help you build resilience, deepen presence, and align with your highest potential.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>✨ Guided Meditations</h3>
+        <p>Relax and refocus through science-based and spiritual practices.</p>
+      </div>
+      <div class="feature">
+        <h3>🧠 Thoughtful Prompts</h3>
+        <p>Daily questions and reflections to increase emotional awareness and intentional living.</p>
+      </div>
+      <div class="feature">
+        <h3>🌙 Sleep Sounds</h3>
+        <p>Drift into restful sleep with peaceful ambient sounds and nature-based audio experiences.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Reflective Audio Sessions</h3>
+        <p>Listen to calming audio meditations and reflections to start or end your day with clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial fade-in">
+    “This app brought balance into my daily life. It helps me reflect before reacting—and I feel more present in my work and with those I love.”
+  </section>
+
+  <section class="about fade-in" id="about">
+    <h2>Our Mission</h2>
+    <p>We believe lasting transformation begins within. Souls Coffee empowers you to nurture your spiritual well-being alongside your mental health—so you can grow with clarity, intention, and compassion.</p>
+  </section>
+
+  <section class="community fade-in">
+    <h2>A Community of Seekers</h2>
+    <p>Whether you’re navigating a career pivot, building healthier relationships, or simply wanting more peace in your life—Souls Coffee is your companion on the journey inward and upward.</p>
+  </section>
+
+  <section class="cta fade-in" id="login">
+    <h2>Start Your Journey</h2>
+    <p>Sign up and get early access to the app as soon as it launches.</p>
+    <button>Get Early Access</button>
+    <div class="platforms">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </div>
+  </section>
+
+  <footer id="help">
+    &copy; 2025 Souls Coffee. Designed to nurture your soul and sharpen your mind.
+    <div style="font-size: 0.8rem; color: #888; margin-top: 1rem;">
+      <a href="policy.html" style="margin-right: 1rem; color: #666; text-decoration: none;">Privacy Policy</a>
+      <a href="terms.html" style="color: #666; text-decoration: none;">Terms of Service</a>
+    </div>
+  </footer>
+
+
+  <script>
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeInElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
